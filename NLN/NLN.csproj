@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A29D4EC3-3945-4B96-BBE2-8BDD2EF68F76}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NLN</RootNamespace>
+    <AssemblyName>NLN</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.1.1.2225.0\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.GLControl.1.1.2225.0\lib\net20\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.1.5.28844, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZedGraph.5.1.5\lib\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassDatabase.cs" />
+    <Compile Include="fBangLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBangLuong.Designer.cs">
+      <DependentUpon>fBangLuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBHYT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBHYT.Designer.cs">
+      <DependentUpon>fBHYT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fBoPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fBoPhan.Designer.cs">
+      <DependentUpon>fBoPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fCĐThaiSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCĐThaiSan.Designer.cs">
+      <DependentUpon>fCĐThaiSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDangky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDangky.Designer.cs">
+      <DependentUpon>fDangky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDoiMatKhau.Designer.cs">
+      <DependentUpon>fDoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fHSThuViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fHSThuViec.Designer.cs">
+      <DependentUpon>fHSThuViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="flogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flogin.Designer.cs">
+      <DependentUpon>flogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLuongNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLuongNV.Designer.cs">
+      <DependentUpon>fLuongNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fLuongThuViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLuongThuViec.Designer.cs">
+      <DependentUpon>fLuongThuViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fManager.Designer.cs">
+      <DependentUpon>fManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPhongBan.Designer.cs">
+      <DependentUpon>fPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTTNhanSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTTNhanSu.Designer.cs">
+      <DependentUpon>fTTNhanSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fBangLuong.resx">
+      <DependentUpon>fBangLuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBHYT.resx">
+      <DependentUpon>fBHYT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fBoPhan.resx">
+      <DependentUpon>fBoPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fCĐThaiSan.resx">
+      <DependentUpon>fCĐThaiSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDangky.resx">
+      <DependentUpon>fDangky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDoiMatKhau.resx">
+      <DependentUpon>fDoiMatKhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fHSThuViec.resx">
+      <DependentUpon>fHSThuViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flogin.resx">
+      <DependentUpon>flogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLuongNV.resx">
+      <DependentUpon>fLuongNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fLuongThuViec.resx">
+      <DependentUpon>fLuongThuViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fManager.resx">
+      <DependentUpon>fManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPhongBan.resx">
+      <DependentUpon>fPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTTNhanSu.resx">
+      <DependentUpon>fTTNhanSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="OpenTK.dll.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
